@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CountSpecialCharacter
+{
+    class Special
+    {
+        static void Main(string[] args)
+        {
+          
+            Console.WriteLine("Program to count special characters ");
+            Console.Write("Enter a string :");
+            string str = Console.ReadLine();
+
+            int totalSpecialChar = 0, totalCharacter = 0;
+            char[] strArray = str.ToCharArray();
+            foreach (var item in strArray)
+            {
+
+                if (!char.IsLetterOrDigit(item))
+                    totalSpecialChar++;
+                totalCharacter++;
+            }
+
+           
+            Console.WriteLine("Entered String : " + str);
+            Console.WriteLine("Total Characters In String : " + totalCharacter);
+        Console.WriteLine("Total Specia Character String : " + totalSpecialChar);
+            Console.WriteLine("--------------------------------------------------------");
+            Console.ReadKey();
+        }
+    }
+}
