@@ -1,0 +1,14 @@
+using System;
+
+public class space
+{
+    public static void Main()
+    {
+        string str1 = "sanyogita sampat salunkhe";
+
+        //Removes the white spaces using regex  
+        str1 = str1.Replace(" ", String.Empty);
+
+        Console.WriteLine("String after removing all the white spaces : " + str1);
+    }
+}
